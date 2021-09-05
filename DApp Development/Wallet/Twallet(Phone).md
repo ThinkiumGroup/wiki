@@ -16,7 +16,7 @@ Android Download：[https://thinkium-data.s3.us-west-2.amazonaws.com/Twallet-202
 
 app snapshots
 
-![](https://thinkium-wiki.s3.ap-northeast-1.amazonaws.com/wallet/twallet.png)
+![](https://thinkiumdev.net/res/wiki/wallet/twallet.png)
 
 
 

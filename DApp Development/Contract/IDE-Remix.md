@@ -10,5 +10,5 @@ When running, selecting **Injected Web3 Thinkium** will automatically pop up TMM
 
 
 
-![](https://thinkium-wiki.s3.ap-northeast-1.amazonaws.com/remix/remix.png)
+![](https://thinkiumdev.net/res/wiki/remix/remix.png)
 

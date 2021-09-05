@@ -16,19 +16,19 @@ GitHub source code: https://github.com/ThinkiumGroup/zombie-game
 
 Zombie Army
 
-![](https://thinkium-wiki.s3.ap-northeast-1.amazonaws.com/contract/zombie-1.png)
+![](https://thinkiumdev.net/res/wiki/contract/zombie-1.png)
 
 
 
 My Zombies
 
-![](https://thinkium-wiki.s3.ap-northeast-1.amazonaws.com/contract/zombie-2.png)
+![](https://thinkiumdev.net/res/wiki/contract/zombie-2.png)
 
 
 
 Gene simulation
 
-![](https://thinkium-wiki.s3.ap-northeast-1.amazonaws.com/contract/zombie-3.png)
+![](https://thinkiumdev.net/res/wiki/contract/zombie-3.png)
 
 
 
