@@ -1,21 +1,12 @@
 <template>
   <div class="page-wrap">
-    <div class="header">Thinkium test chain test coin faucet</div>
-    <p>Automatically send 0.5 testnet TKM to your testnet address, you can get 5 testnet TKM at most</p>
-    <p>The TKM here can only be used for testing</p>
-    <p>Testnet TKM is issued to chain 1 by default</p>
+    <div class="header">{{lan('testCoinFaucet')}}</div>
+    <p>{{lan('automaticallySendTestnet')}}</p>
+    <p>{{lan('onlyBeUsedForTesting')}}</p>
+    <p>{{lan('chain1ByDefault')}}</p>
     <div class="search-wrap">
-      <div class="tab-wrap">
-        <div class="tab-item" 
-          v-for="(item, index) in tabList" 
-          :key="index + item" 
-          :class="{'active': selectedIndex === index}" 
-        >
-          {{item.label}}
-        </div>
-      </div>
       <div class="search" style="width:388px" v-show="selectedIndex == 1">
-        <el-select v-model="coinAddressId" placeholder="please choose" style="width:100%">
+        <el-select v-model="coinAddressId" :placeholder="lan('pleaseChoose')" style="width:100%">
           <el-option
             v-for="item in coinList"
             :key="item.id"
@@ -25,16 +16,20 @@
         </el-select>
       </div>
       <div class="search">
-        <el-input class="input" v-model="address" placeholder="Please enter your address..."></el-input>
-        <div class="confirm-btn" @click="confirmBtn">Confirm</div>
+        <el-input class="input" v-model="address" :placeholder="lan('enterYourAddress')" @change="onInputChange"></el-input>
+        <div class="confirm-btn" @click="confirmBtn">{{lan('receive')}}</div>
+        <div class="confirm-btn" style="width: 150px" @click="checkAccount">{{lan('checkBalance')}}</div>
+      </div>
+      <div class="account" v-show="currentAccountVaule">
+        {{lan('currentAccountBalance') + currentAccountVaule}}
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { autoSendTestCoin, autoSendTRCCoin, getCoinAddress } from '../../../api/testNetwork.js';
-import { isValidTHAddress, toAddress0x } from '../../../utils/common';
+import { autoSendTestCoin, autoSendTRCCoin, getCoinAddress, getAccount } from '../../../api/testNetwork.js';
+import { isValidTHAddress, isValid0xAddress, toAddress0x } from '../../../utils/common';
 export default {
   data() {
     return {
@@ -45,39 +40,75 @@ export default {
       address: '',
       amount: "",
       coinAddressId: '',
-      coinList: []
+      coinList: [],
+      currentAccountVaule: 0,
     }
   },
   created() {
   },
   methods: {
+    onInputChange(){
+      this.currentAccountVaule = 0;
+    },
     selectClick(index) {
       this.selectedIndex = index
       this.address = ""
     },
     async autoSendTestCoin() {
       let data = {
-        toAddress: toAddress0x(this.address),
+        toAddress: isValid0xAddress(this.address)? this.address.toLowerCase() : toAddress0x(this.address),
         type: this.tabList[this.selectedIndex].value
       }
-      try{
-          let res = await autoSendTestCoin(data);
-          this.$message.success('Successfully issued')
-      }catch(err){
-         console.log('--err', err)
-         this.$message.warning('The issuance fails or the address has already issued this type of test currency')
-      }
-      
+     autoSendTestCoin(data).then((res) => {
+        if(res.code == 200){
+          this.$message.success(this.lan('successfullyIssued'))
+        }else if(res.code == 2000){
+          this.$message.warning(this.lan('alreadyAppliedToday'))
+        }else{
+          this.$message.warning(this.lan('issuanceFailed'))
+        };
+     })
     },
-    confirmBtn() {
+    checkInput(){
       this.address = this.address.trim();
       if(!this.address) {
-        this.$message.warning('Please enter the address')
+        this.$message.warning(this.lan('enterTheAddress'))
         return false
       }
-      if(!isValidTHAddress(this.address)){
-        this.$message.warning('Please enter the correct address')
-        return
+      if(!isValidTHAddress(this.address) && !isValid0xAddress(this.address)){
+        this.$message.warning(this.lan('enterTheCorrectAddress'))
+        return false
+      }
+      return true;
+    },
+    checkAccount(){
+      if(!this.checkInput()){
+        return;
+      }
+       const loading = this.$loading({
+          lock: true,
+          text: 'Loading',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+        });
+      let data = {
+        chainId: '1',
+        address: isValid0xAddress(this.address)? this.address.toLowerCase() : toAddress0x(this.address)
+      }
+      getAccount(data).then((res) => {
+        if(res.code == 200){
+          let data = res['data'] || {};
+          this.currentAccountVaule = data.balanceValue;
+        }
+        loading.close();
+      }).catch((err) => {
+        console.log('--err')
+        loading.close();
+      })
+    },
+    confirmBtn() {
+      if(!this.checkInput()){
+        return;
       }
       console.log(this.address)
       if(this.selectedIndex == 0) {
@@ -86,8 +117,11 @@ export default {
       if(this.selectedIndex == 1) {
         this.autoSendTRCCoin()
       }
+    },
+    lan(key){
+      return this.$lan && this.$lan.en[key] || '';
     }
-  }
+  },
 }
 </script>
 
@@ -164,10 +198,17 @@ export default {
           cursor: pointer;
         }
       }
+      .account{
+        color: #FFF;
+        margin-top: 10px;
+        font-weight: 500;
+      }
     }
   }
 
+  /deep/.el-input__inner{
+    border: none !important;
+  }
+
 </style>
-
-
 
