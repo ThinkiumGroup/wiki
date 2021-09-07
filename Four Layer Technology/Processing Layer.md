@@ -1,0 +1,3 @@
+### Processing layer
+
+In the second layer, "processing layer", TBFT consensus algorithm is designed to solve the single-chain consensus problem, which needs to process the assigned requests and generate logs. Each committee contains a set of nodes assigned by the task layer. When the committee receives a given request, it needs to process the request, then reach consensus and generate a log. Since the trustworthiness of each committee is  guaranteed by the upper layer, the current layer only needs to consider how to reach a consensus within the committee as quickly as possible.
