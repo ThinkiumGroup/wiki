@@ -1,68 +1,63 @@
----
-home: true
----
-<template>
-  <div class="__home_container">
-    <el-row class="header">
-      <div class="content">
-         <div class="title">
-            The Thinkium Developer Hub
-         </div>
-         <div class="desc">
-            Welcome to the Thinkium developer hub. You'll find comprehensive guides and documentation to help you start working with Thinkium as quickly as possible, as well as support if you get stuck. Let's jump right in!
-         </div>
-         <div class="link-list">
-           <!-- <img src="/images/TKM.png" alt="" class="link-img" > -->
-           <a :href="item.link"  target="_blank" v-for="item in linkList"><img :src="$withBase(item.imgSrc)" alt="" class="link-img" ></a>
-         </div>
-      </div>
-    </el-row>
-    <el-row class="main content">
-       <ul class="module-list" @click="toPath">
-          <li class="module-item" v-for="item in moduleList" :data-path="item.path">
-            <span>{{item.label}}</span>
-          </li>
-       </ul>
-    </el-row>
-  </div>
-</template>
+### What is Thinkium
 
-<script>
-  export default {
-   components: {
+Thinkium is an all-around public blockchain network, which achieves unlimited scalability at a linear cost by running through a multi-layer multi-chain structure and integrating Layer1 + Layer2 technologies (layered and parallel subchains, homogeneous and heterogeneous cross-chains, sharding, EVM and asset bridge, etc.) 
 
-   },
-   data () {
-     return {
-       linkList: [
-         {link: 'https://www.thinkium.net', imgSrc: '/images/TKM.png'},
-         {link: 'https://0.plus/Thinkiumofficial', imgSrc: '/images/Telgram.png'},
-         {link: 'https://twitter.com/Thinkium_Chain', imgSrc: '/images/Twitter.png'},
-         {link: 'https://thinkiumfoundation.medium.com/thinkium-blockchain-9e03c36fb7af', imgSrc: '/images/Medium.png'},
-         {link: 'https://www.reddit.com/r/Thinkium/', imgSrc: '/images/Reddit.png'},
-         {link: 'https://github.com/ThinkiumGroup', imgSrc: '/images/Github.png'},
-       ],
-       moduleList: [
-         {label: 'Development', path: '/en/DApp Development/RPC/Introduction'},
-       ]
-     }
-   },
-   methods: {
-     toPath(e){
-       let {path} = e.target.dataset;
-       this.$router.push(path)
-     }
-   },
-   mounted(){
-     console.log('---this.$page.frontmatter', this.$page.frontmatter);
-     
+
+
+#### Vision and Misson
+
+A public blockchain infrastructure aiming to facilitate Internet level large-scale applications and bridge the physical world and the digital world to launch the era of Web 3.0.
+
+
+
+#### Contact Us
+
+<div class="link-list">
+    <a class="link-item" target="_blank" href="https://0.plus/Thinkiumofficial">
+        <img src="https://thinkiumdev.net/res/wiki/icon/Btok.png" alt="" style="zoom:25%;" />
+        <span>Btok</span>
+    </a>
+    <a class="link-item" target="_blank" href="https://twitter.com/Thinkium_Chain">
+        <img src="https://thinkiumdev.net/res/wiki/icon/Twitter.png" alt="" style="zoom:25%;" />
+        <span>twitter</span>
+    </a>
+    <a class="link-item" target="_blank" href="https://github.com/ThinkiumGroup">
+        <img src="https://thinkiumdev.net/res/wiki/icon/Github.png" alt="" style="zoom:25%;" />
+        <span>GitHub</span>
+    </a>
+    <a class="link-item" target="_blank" href="https://www.reddit.com/r/Thinkium">
+        <img src="https://thinkiumdev.net/res/wiki/icon/reddit.png" alt="" style="zoom:25%;" />
+        <span>reddit</span>
+    </a>
+    <a class="link-item" target="_blank" href="https://thinkiumfoundation.medium.com/thinkium-blockchain-9e03c36fb7af">
+        <img src="https://thinkiumdev.net/res/wiki/icon/medium.png" alt="" style="zoom:25%;" />
+        <span>medium</span>
+    </a>
+</div>
+
+
+#### Market Demand
+
+The existing public chain products are incapable of supporting the implementation of large-scale Internet-level applications, and the limited basic capability of blockchain seriously restricts its ecological development.
+
+<style>
+   .link-list{
+       display: flex;
+       justify-content: flex-start;
+       margin: 20px 0 0;
+       
    }
- }
-</script>
+   .link-list > .link-item{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+    }
+    .link-list > .link-item:nth-child(n+2){
+        margin-left: 30px;
+    }
 
-<style scoped lang="scss">
-
+    .link-list > .link-item > span{
+            margin-top: 10px;
+    }
 </style>
-
-
-
