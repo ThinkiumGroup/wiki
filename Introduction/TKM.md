@@ -1,9 +1,5 @@
 ### TKM
 
-Current Total Supply/Max Supply : 500,000,000/10,000,000,000
-
-Circulating Supply : 5%
-
 Holders : 10000+
 
 Distribution :
