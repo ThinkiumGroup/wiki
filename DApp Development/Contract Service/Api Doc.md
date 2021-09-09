@@ -988,7 +988,7 @@ Logs:
 | data 				| String 		| |
 | event 			| list 			| |
 | logIndex 			| String 		| |
-| topics 			| List<String> 	| |
+| topics 			| List:String 	| |
 | transactionHash 	| String 		| |
 | transactionIndex 	| String 		| Call method |
 
@@ -1094,7 +1094,7 @@ Logs:
 | data		 		| String | Event non-indexed parameters |
 | event 			| list | Event after reverse solution |
 | logIndex 			| String | Event Index |
-| topics 			| List<String> | The first data is the hash of the event signature, and the rest are the event 									parameters of the index |
+| topics 			| List:String | The first data is the hash of the event signature, and the rest are the event 									parameters of the index |
 | transactionHash 	| String | |
 | transactionIndex 	| String | Call method |
 
@@ -1286,7 +1286,7 @@ data:
 | ---------- | ------ | ---- |
 | N 				| String 		| Number of Accounts |
 | accountcount 		| Int 			| |
-| currentcomm 		| List<String> 	| |
+| currentcomm 		| List:String 	| |
 | currentheight 	| Long 			| current height |
 | epochduration 	| Int 			| epoch duration |
 | accountcount 		| Int 			| |
@@ -1359,7 +1359,7 @@ Return parameter description
 | ------ | ------ | -------- |
 | code 	| String 		| Return code |
 | msg	| String 		| Return information |
-| data 	| List<String> 	| Return data, node id |
+| data 	| List:String 	| Return data, node id |
 
 Request example
 
