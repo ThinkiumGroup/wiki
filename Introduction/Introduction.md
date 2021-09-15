@@ -14,8 +14,8 @@ A public blockchain infrastructure aiming to facilitate Internet level large-sca
 
 <div class="link-list">
     <a class="link-item" target="_blank" href="https://0.plus/Thinkiumofficial">
-        <img src="https://thinkiumdev.net/res/wiki/icon/Btok.png" alt="" style="zoom:25%;" />
-        <span>Btok</span>
+        <img src="https://thinkiumdev.net/res/wiki/icon/Telgram.png" alt="" style="zoom:25%;" />
+        <span>Telegram</span>
     </a>
     <a class="link-item" target="_blank" href="https://twitter.com/Thinkium_Chain">
         <img src="https://thinkiumdev.net/res/wiki/icon/Twitter.png" alt="" style="zoom:25%;" />
@@ -36,6 +36,7 @@ A public blockchain infrastructure aiming to facilitate Internet level large-sca
 </div>
 
 
+
 #### Market Demand
 
 The existing public chain products are incapable of supporting the implementation of large-scale Internet-level applications, and the limited basic capability of blockchain seriously restricts its ecological development.
@@ -45,7 +46,7 @@ The existing public chain products are incapable of supporting the implementatio
        display: flex;
        justify-content: flex-start;
        margin: 20px 0 0;
-       
+
    }
    .link-list > .link-item{
            display: flex;
