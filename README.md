@@ -14,8 +14,8 @@ A public blockchain infrastructure aiming to facilitate Internet level large-sca
 
 <div class="link-list">
     <a class="link-item" target="_blank" href="https://0.plus/Thinkiumofficial">
-        <img src="https://thinkiumdev.net/res/wiki/icon/Btok.png" alt="" style="zoom:25%;" />
-        <span>Btok</span>
+        <img src="https://thinkiumdev.net/res/wiki/icon/Telegram.png" alt="" style="zoom:25%;" />
+        <span>Telegram</span>
     </a>
     <a class="link-item" target="_blank" href="https://twitter.com/Thinkium_Chain">
         <img src="https://thinkiumdev.net/res/wiki/icon/Twitter.png" alt="" style="zoom:25%;" />
@@ -34,6 +34,7 @@ A public blockchain infrastructure aiming to facilitate Internet level large-sca
         <span>medium</span>
     </a>
 </div>
+
 
 
 #### Market Demand
