@@ -106,7 +106,7 @@ web3.cipher.verify(hash, signature, publicKey)
 
 
 
-## 链交互方法
+## Chain Api
 
 
 
