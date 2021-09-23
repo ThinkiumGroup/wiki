@@ -14,7 +14,7 @@ Currently, the official RPC service for testing and production environments is p
 
 
 
-测试RPC：**rpctest.thinkium.org**
+Test RPC：**rpctest.thinkium.org**
 
 Production RPC：**rpcproxy.thinkium.org**
 
