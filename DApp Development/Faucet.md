@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import { autoSendTestCoin, autoSendTRCCoin, getCoinAddress, getAccount } from '../../../api/testNetwork.js';
-import { isValidTHAddress, isValid0xAddress, toAddress0x } from '../../../utils/common';
+import { autoSendTestCoin, autoSendTRCCoin, getCoinAddress, getAccount } from '../../api/testNetwork.js';
+import { isValidTHAddress, isValid0xAddress, toAddress0x } from '../../utils/common';
 export default {
   data() {
     return {
