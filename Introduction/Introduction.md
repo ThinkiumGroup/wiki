@@ -41,24 +41,3 @@ A public blockchain infrastructure aiming to facilitate Internet level large-sca
 
 The existing public chain products are incapable of supporting the implementation of large-scale Internet-level applications, and the limited basic capability of blockchain seriously restricts its ecological development.
 
-<style>
-   .link-list{
-       display: flex;
-       justify-content: flex-start;
-       margin: 20px 0 0;
-
-   }
-   .link-list > .link-item{
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
-    }
-    .link-list > .link-item:nth-child(n+2){
-        margin-left: 30px;
-    }
-
-    .link-list > .link-item > span{
-            margin-top: 10px;
-    }
-</style>
