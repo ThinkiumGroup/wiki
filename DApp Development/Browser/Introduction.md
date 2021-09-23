@@ -1,4 +1,4 @@
-## 简介
+## Introduction
 
 Blockchain browser is a tool that provides users with browsing and querying all information on the blockchain.
 
