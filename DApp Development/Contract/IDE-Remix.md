@@ -2,13 +2,37 @@ Contract IDE, Thinkium version
 
 
 
-Remix address: [https://remix.thinkiumdev.net/](https://remix.thinkiumdev.net/)
+Remix address: [https://remix.ethereum.org/](https://remix.ethereum.org/)
 
 
 
-When running, selecting **Injected Web3 Thinkium** will automatically pop up TMMSK for  transactions.
+MetaMask rpc and chainId configuration：
 
 
 
-![](https://thinkiumdev.net/res/wiki/remix/remix.png)
+TestNet:
+
+Account Chain : **test1.thinkiumrpc.net**  chainId: **100008**
+
+PoS Chain : **test2.thinkiumrpc.net**  chainId: **100009**
+
+Business Chain : **test103.thinkiumrpc.net** chainId : **100110**
+
+Cross Chain: **test.thinkiumrpc.net**
+
+
+
+MainNet:
+
+Account Chain : **proxy1.thinkiumrpc.net**  chainId: **100008**
+
+PoS Chain : **proxy2.thinkiumrpc.net**  chainId: **100009**
+
+Business Chain : **proxy103.thinkiumrpc.net** chainId : **100110**
+
+Cross Chain: **proxy.thinkiumrpc.net** 
+
+
+
+
 

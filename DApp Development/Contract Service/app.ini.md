@@ -9,7 +9,7 @@ port = ":8101"
 
 [rpc]
 ;use rpcproxy.thinkium.org in production environment
-rpc = "rpctest.thinkium.org"
+rpc = "test.thinkiumrpc.net"
 
 [encrypt]
 ;key must 16, 24, 32 bit

@@ -9,7 +9,7 @@ JDK version: 1.8
 Before performing all on-chain interaction interfaces, get the connection instance web3j firstly.  The httpService parameter is the RPC address (note that version V2 is used).
 
 ```java
-protected static final Web3j web3j = Web3j.load(new HttpService("http://rpctest.thinkium.org/v2"));
+protected static final Web3j web3j = Web3j.load(new HttpService("http://test.thinkiumrpc.net/v2"));
 ```
 
 

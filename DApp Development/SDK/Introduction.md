@@ -1,6 +1,14 @@
 ## Introduction
 
-Thinkium provides four SDKs for the majority of developers, **JS, Java, Go, Python**.
+Thinkium is compatible with the development interface of Ethereum, so it can directly use the SDK of Ethereum for chain development.
+
+Ethereum SDK docs:   [https://ethereum.org/zh/developers/docs/programming-languages/]( https://ethereum.org/zh/developers/docs/programming-languages/)
+
+
+
+If you want to do **cross-chain development**, you need to download the official Thinkium SDK. Currently we provide four language versions **JS**, **Java**, **Go**, **Python**.
+
+
 
 This document is easy to check what interfaces are supported on the chain. For specific usage, it is recommended to download the SDK of the corresponding language. There are detailed test cases in the SDK.
 
@@ -31,7 +39,26 @@ chain 103 , business chain
 
 RPC address: The RPC is used to interact with the chain. The following is the official RPC address. If you build the chain node yourself. You can deploy your own RPC service and connect to your own RPC address while development.
 
-Test RPC: **rpctest.thinkium.org**
 
-Production RPC: **rpcproxy.thinkium.org**
 
+TestNet:
+
+Account Chain : **test1.thinkiumrpc.net**  chainId: **100008**
+
+PoS Chain : **test2.thinkiumrpc.net**  chainId: **100009**
+
+Business Chain : **test103.thinkiumrpc.net** chainId : **100110**
+
+Cross Chain: **test.thinkiumrpc.net**
+
+
+
+MainNet:
+
+Account Chain : **proxy1.thinkiumrpc.net**  chainId: **100008**
+
+PoS Chain : **proxy2.thinkiumrpc.net**  chainId: **100009**
+
+Business Chain : **proxy103.thinkiumrpc.net** chainId : **100110**
+
+Cross Chain: **proxy.thinkiumrpc.net** 

@@ -16,5 +16,5 @@ Check all the versions of Contract Service
 
 Docker Hub address : https://hub.docker.com/r/thinkium/contract/tags?page=1&ordering=last_updated
 
-Stable Version : 202108311553
+Stable Version : **202110191208**
 

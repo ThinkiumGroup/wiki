@@ -4,7 +4,7 @@ For testing environment only! For testing only!
 
 Service address: **contract-test.thinkium.org**
 
-rpc address: **rpctest.thinkium.org**
+rpc address: **test.thinkiumrpc.net**
 
 AES encryption password: **key1="yitawzdk3ueqarfq" ;key2="azrtiabarda3ufgq"**
 

@@ -36,7 +36,7 @@ var web3 = new Web3();
 Set a provider (`HttpProvider`
 
 ```js
-let rpcUrl = 'https://rpctest.thinkium.org';
+let rpcUrl = 'https://test.thinkiumrpc.net';
 web3.setProvider(new web3.providers.HttpProvider(rpcUrl));
 ```
 
