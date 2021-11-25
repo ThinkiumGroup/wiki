@@ -4,10 +4,10 @@
 
 ```yaml
 dataNodes:
-  - {chainId: 0, address: "192.168.1.11:23021"}
-  - {chainId: 1, address: "192.168.1.11:23026"}
-  - {chainId: 2, address: "192.168.1.12:23021"}
-  - {chainId: 103, address: "192.168.1.12:23026"}
+  - {chainId: 60000, address: "192.168.1.11:23021"}
+  - {chainId: 60001, address: "192.168.1.11:23026"}
+  - {chainId: 60002, address: "192.168.1.12:23021"}
+  - {chainId: 60103, address: "192.168.1.12:23026"}
 ```
 
 dataNodes : which the proxy to connect, least one or more nodes required
