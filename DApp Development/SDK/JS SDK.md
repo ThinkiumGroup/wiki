@@ -47,6 +47,14 @@ var account = web3.thk.GetAccount(chainId, address);
 var balance = account.balance;
 ```
 
+## base-chain-id
+before use, speicify base-chain-id via following codes
+
+```js
+web3.thk.setBaseChainId(60000); // in test environment
+web3.thk.setBaseChainId(70000); // in production environment
+```
+
 
 
 ## Local Methods
