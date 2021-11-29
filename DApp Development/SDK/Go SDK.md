@@ -7,6 +7,14 @@ Url address：https://github.com/ThinkiumGroup/web3.go
 go get -u github.com/ThinkiumGroup/web3.go
 
 
+## base-chain-id
+before use, speicify base-chain-id via following codes
+
+```go
+thk.SetBaseChainId(int64(60000)) // in test environment
+thk.SetBaseChainId(int64(70000)) // in production environment
+```
+
 
 ### 1. Get account info (web3.thk.GetAccount)
 
