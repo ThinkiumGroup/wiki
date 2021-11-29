@@ -14,6 +14,16 @@ protected static final Web3j web3j = Web3j.load(new HttpService("http://test.thi
 
 
 
+## base-chain-id
+before use, speicify base-chain-id via following codes
+
+```java
+Transaction.chainIdBase = 60000L; // in test environment
+Transaction.chainIdBase = 70000; // in production environment
+```
+
+
+
 
 
 ### 1. Get account balance(web3.GetAccount)
