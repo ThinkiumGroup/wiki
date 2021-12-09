@@ -477,7 +477,7 @@ Request parameter:：
 | :---------: | :---------: | :------: | :---------------: |
 | Transaction | Transaction |   true   |   transaction entity model   |
 | binContent  |   string    |   true   | the content of the generated bin file |
-| parameters  | List<Type>  |   true   |    input parameters    |
+| parameters  | List:Type  |   true   |    input parameters    |
 
 Response parameter：
 | name |  type  | required |   description   |
