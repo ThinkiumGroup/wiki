@@ -36,11 +36,13 @@ Bounty Rules
 
 1. This project will support 25 documents or video tutorials. 
 
-2. Please upload the complete tutorials to Github. The reward will be given after the tutorial is approved. 
+2. Please upload the complete tutorials to Github.([https://github.com/ThinkiumGroup/wiki/tree/master/Tutorial/Collection%20of%20works](https://github.com/ThinkiumGroup/wiki/tree/master/Tutorial/Collection%20of%20works)) The reward will be given after the tutorial is approved.  
 
-3. The rewards various from 50--200 USDT to the creator depends on the tutorials’ content and quality. 
+3. After the work is uploaded, please send your work link, official discoard group nickname and TKM wallet address to the official mailbox (bounty@thinkium.net), please make sure that the above information is accurate, he will serve as our reward to you certificate.
 
-4. This project only supports original content. You will not receive any rewards once the upload files involve plagiarism.  
+4. The rewards various from 50--200 USDT to the creator depends on the tutorials’ content and quality. 
+
+5. This project only supports original content. You will not receive any rewards once the upload files involve plagiarism.  
 
  
 
